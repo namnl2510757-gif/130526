@@ -84,19 +84,11 @@
     column-count: 1;
 }
 
-.BodyText2Col{
-    font-size: 23px;
-    margin-top: 13px;
-    text-align: justify;
-    margin-bottom: 45px;
-    line-height: 125%;
-    column-count: 2;
-}
-
 /* Link */
 a {
     color:rgb(50, 78, 192); 
     text-decoration: none;
+    font-size: 23px;
 }
 
 /* Chèn ảnh */
@@ -130,70 +122,3 @@ li {
   overflow-y: hidden;
   max-width: 100%;
 }
-
-/* Chân trang */
-
-.footer {
-  text-align: center;
-}
-
-.footer-distributed {
-  background-color:black;
-  font: normal 16px;
-  padding: 20px 25px;
-  margin-top: 80px;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  position: absolute;
-}
-
-/* Social Media */
-
-
-.footerSize{
-    height: 30vh;
-    width: 100%;
-}
-
-.tiny{
-    font-size: 8px;
-}
-
-.scriptsize{
-    font-size: 11px;
-}
-
-.footnotesize{
-    font-size: 13px;
-}
-
-.small{
-    font-size: 15px;
-}
-
-.normalsize{
-    font-size: 18px;
-}
-
-.large{
-    font-size: 19px;
-}
-
-.Large{
-    font-size: 23px;
-}
-
-.LARGE{
-    font-size: 28px;
-}
-
-.huge{
-    font-size: 33px;
-}
-
-.HUGE{
-    font-size: 33px;
-}
-

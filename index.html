@@ -1,114 +1,107 @@
 ---
 layout: default
-title: Test Theme LaTeX
-author: Namlete
-date: May 2026
-abstract: Kiểm tra ghi chép văn bản trên mẫu LaTeX. 
+title: Test LaTeX theme
+author: Nguyen Le Nam
+date: May 13, 2026
+abstract: Your abstract.
 ---
-<p class="Section">1 &ensp; Introduction 1</p>
+<!-- Introduction -->
+<p class="Section">1 &ensp; Introduction</p>
     <p class="BodyText">
-        This has been my first attempt at Jekyll and with such it is likely not too great. I'd like to design this to work a bit more seamlessly aka without inline styling in the page.
-        I imagine this is possible but not too sure how to do it yet. I also want to add more Latex style designs such as designed lists and sub sections etc.
+        Your introduction goes here! Simply start writing your document and 
+        use the Recompile button to view the updated PDF preview. 
+        Examples of commonly used commands and features are listed below, to help you get started.
     </p>
 
     <p class="BodyText">
-        Body Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu molestie nibh. Integer faucibus aliquam congue. Praesent egestas, augue ac pharetra volutpat, arcu turpis tempor tortor, eget posuere mi sem in neque. Aliquam pretium dolor non mauris hendrerit, nec posuere sem interdum. Praesent malesuada nunc in nisi fringilla tempor. Integer non ante eros. Quisque lacinia ullamcorper scelerisque. Integer pulvinar nunc ipsum, eget placerat urna commodo vel. Nullam diam justo, egestas sollicitudin ligula sed, vehicula egestas justo. Sed dictum ipsum rutrum sagittis tempor. Etiam semper mauris varius, ultricies diam id, vestibulum odio.
+      Once you're familiar with the editor, you can find various project settings in the Overleaf menu, accessed via 
+      the button in the very top left of the editor. To view tutorials, user guides, and further documentation, 
+      please visit our <a href="https://www.overleaf.com/learn" target="_blank">help library</a>, or head to our plans page to
+      <a href="https://www.overleaf.com/user/subscription/plans" target="_blank">choose your plan</a>. 
     </p>
 
+<!-- Some examples to get started -->
+ <p class="Section">2 &ensp; Some examples to get started</p>
+    <!-- How to create Sections and Subsections -->
+    <p class="SubSection">2.1 &ensp; How to create Sections and Subsections</p>
     <p class="BodyText">
-        \begin{equation}
-        i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m}
-        \frac{\partial^2 \Psi}{\partial x^2} + V \Psi
-        \label{eq:series}
-        \end{equation}
-
-        We can reference the equation as \eqref{eq:series}   
+        Simply use the section and subsection commands, as in this example document! With Overleaf, 
+        all the formatting and numbering is handled automatically according to the template you've chosen. 
+        If you're using the Visual Editor, you can also create new section and subsections via the buttons in the editor toolbar.
     </p>
-
+    <!-- How to include Figures -->
+    <p class="SubSection">2.2 &ensp; How to include Figures</p>
     <p class="BodyText">
+        First you have to upload the image file from your computer using the upload link in the file-tree menu. 
+        Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. 
+        See the code for Figure <a href="#fig:frog">1</a> in this section for an example.
+    </p>
+    <p class="BodyText">
+        Note that your figure will automatically be placed in the most appropriate place for it, given the surrounding text and taking into account other figures or tables that may be close by.
+        You can find out more about adding images to your documents in this help article on <a href="https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf" target="_blank">including images on Overleaf</a>
+    </p>
+    <p class="BodyText">
+        <figure>
+            <img src="./img/frog.jpg" alt="frog">
+            <figcaption id="fig:frog">Figure 1: This frog was uploaded via the file-tree menu.</figcaption>
+        </figure>
+    </p>
+    <p class="BodyText">
+        (Hiện tại chưa chèn bảng)
+    </p>
+    <!-- How to add Tables -->
+    <p class="SubSection">2.3 &ensp; How to add Tables</p>
+    <p class="BodyText">
+        Use the table and tabular environments for basic tables --- see Table~\ref{tab:widgets}, for example. 
+        For more information, please see this help article on <a href="https://www.overleaf.com/learn/latex/tables" target="_blank">tables</a>
+    </p>
+    <!-- How to add Comments and Track Changes -->
+    <p class="SubSection">2.4 &ensp; How to add Comments and Track Changes</p>
+    <p class="BodyText">
+        Comments can be added to your project by highlighting some text and clicking ``Add comment'' in the top right of the editor pane. 
+        To view existing comments, click on the Review menu in the toolbar above. To reply to a comment, click on the Reply button in the lower 
+        right corner of the comment. You can close the Review pane by clicking its name on the toolbar when you're done reviewing for the time being.
+    </p>
+    <p class="BodyText">
+        Track changes are available on all our <a href="https://www.overleaf.com/user/subscription/plans" target="_blank">premium plans</a>, 
+        and can be toggled on or off using the option at the top of the Review pane. Track changes allow you to keep track of 
+        every change made to the document, along with the person making the change.
+    </p>
+    <!-- How to add Lists -->
+    <p class="SubSection">2.5 &ensp; How to add Lists</p>
+    <p class="BodyText">
+        You can make lists with automatic numbering . . 
         <ul>
-            <li>\(D_{i_1 \cdots i_k}^{j_1 \cdots j_k}\) là định thức của ma trận vuông cấp \(k\), được xác định bởi các phần tử nằm trên giao của các dòng \(i_1, \dots, i_k\) và các cột \(j_1, \dots, j_k\).</li>
-            <li>\((-1)^{i_1 + \dots i_k + j_1 + \dots + j_k} \cdot \overline{D}_{i_1 \dots i_k}^{j_1 \dots j_k}\) là phần bù đại số của \(D_{i_1 \cdots i_k}^{j_1 \cdots j_k}\). 
-                Với \(\overline{D}_{i_1 \dots i_k}^{j_1 \dots j_k}\) được gọi là định thức con bù của ma trận vuông cấp \(n - k\), được xác định bởi các phần tử không nằm trên giao của các dòng \(i_1, \dots, i_k\) và các cột \(j_1, \dots, j_k\).
-            </li>
+            <li>Like this,</li>
+            <li>and like this.</li>
         </ul>
     </p>
-
-    <p class="BodyText">
-    So we can write like LaTeX. Phương trình yêu thích của tôi là \(E = m \cdot c^2\)
-    </p>
-
-<p class="Section">2 &ensp; Test văn bản cùng Namlete</p>
-    <p class="BodyText"  style="color: rgb(239, 77, 77);">
-        Trời đất ơi ! Không lẽ, mình sẽ chẳng bao giờ tìm thấy nhau.</p>
-    </p>
-
-<!-- Test ptr dài  -->
-    <p class="BodyText">
-    $$
-    \begin{equation*}
-    \begin{aligned}
-    \det(B) &= \sum_{\sigma \in S_3} \operatorname{sgn}(\sigma) \prod_{k=1}^{3} a_{k, \sigma(k)} \\
-
-    \\
-
-    &= \left[ \operatorname{sgn}(\sigma_1) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_3} \right] + \left[ \operatorname{sgn}(\sigma_2) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_3} \right] + \left[ \operatorname{sgn}(\sigma_3) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_3} \right] + \left[ \operatorname{sgn}(\sigma_4) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_3} \right] + \left[ \operatorname{sgn}(\sigma_5) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_3} \right] + \left[ \operatorname{sgn}(\sigma_6) a_{1\sigma_1} a_{2\sigma_2} a_{3\sigma_3} \right]\\
-
-    \\
-
-    &= (1.a_{11}.a_{22}.a_{33}) + ((-1).a_{11}.a_{23}.a_{32}) + ((-1).a_{12}.a_{21}.a_{33}) + (1.a_{12}.a_{23}.a_{31}) + (1.a_{13}.a_{21}.a_{32}) + ((-1).a_{13}.a_{22}.a_{31}) \\
-
-    \\
-
-    &= (a_{11}.a_{22}.a_{33} + a_{12}.a_{23}.a_{31} + a_{13}.a_{21}.a_{32}) - (a_{11}.a_{23}.a_{32} + a_{12}.a_{21}.a_{33} + a_{13}.a_{22}.a_{31})
-    \end{aligned}
-    \end{equation*}
-    $$
-    </p>
-
-<!-- Chèn link -->
-    <p class="BodyText">
-        Chèn link: <a href="https://youtu.be/pYEjp_YOhqg?si=MRDEJjy4V3ys5Gai" target="_blank">https://youtu.be/pYEjp_YOhqg?si=MRDEJjy4V3ys5Gai</a>
-    </p>
-    <p class="BodyText">
-        <a href="https://youtu.be/pYEjp_YOhqg?si=MRDEJjy4V3ys5Gai" target="_blank">September Rain</a>
-    </p>
-    <!-- Chèn ảnh  -->
-    <p class="BodyText">
-        <img src="./img/david foster wallace.jpg" >
-    </p>
-    <p class="BodyText">
-        <figure>
-            <img src="./img/Toán và văn.jpg" alt="Toán và Văn">
-            <figcaption><b>Nguồn</b>: Mathtasy</figcaption>
-        </figure>
-    </p>
-    <p class="BodyText">
-        Body Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu molestie nibh. Integer faucibus aliquam congue. Praesent egestas, augue ac pharetra volutpat, arcu turpis tempor tortor, eget posuere mi sem in neque. Aliquam pretium dolor non mauris hendrerit, nec posuere sem interdum. Praesent malesuada nunc in nisi fringilla tempor. Integer non ante eros. Quisque lacinia ullamcorper scelerisque. Integer pulvinar nunc ipsum, eget placerat urna commodo vel. Nullam diam justo, egestas sollicitudin ligula sed, vehicula egestas justo. Sed dictum ipsum rutrum sagittis tempor. Etiam semper mauris varius, ultricies diam id, vestibulum odio.
-    </p>
-    <p class="BodyText">
-        <figure>
-            <img src="./img/Hakase.jpg" alt="Hakase" width="550px" height="350px">
-            <figcaption><b>Nguồn</b>: Pinterest</figcaption>
-        </figure>
-    </p>
-
-<!-- Danh sách -->
-    <p class="BodyText">
-        Body Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu molestie nibh. Integer faucibus aliquam congue. Praesent egestas, augue ac pharetra volutpat, arcu turpis tempor tortor, eget posuere mi sem in neque. Aliquam pretium dolor non mauris hendrerit, nec posuere sem interdum. Praesent malesuada nunc in nisi fringilla tempor. Integer non ante eros. Quisque lacinia ullamcorper scelerisque. Integer pulvinar nunc ipsum, eget placerat urna commodo vel. Nullam diam justo, egestas sollicitudin ligula sed, vehicula egestas justo. Sed dictum ipsum rutrum sagittis tempor. Etiam semper mauris varius, ultricies diam id, vestibulum odio.
-    </p>
-       <ul>
-            <li>Một</li>
-            <li>Hai</li>
-        </ul>
-        <ol type="I">
-            <li>Hi</li>
-            <li>Chào</li>
+    <p>
+        \dots or bullet points \dots
+        <ol>
+            <li>Like this,</li>
+            <li>and like this.</li>
         </ol>
     </p>
-
-<!-- In đậm, in nghiêng, gạch chân, màu chữ -->
+    <!-- How to write Mathematics -->
+    <p class="SubSection">2.6 &ensp; How to write Mathematics</p>
     <p class="BodyText">
-        <i>Xin chào </i> <u>các bạn</u> nhỏ của tôi <b>nhé!</b>
+        LaTeX is great at typesetting mathematics. Let \( \{X_1, X_2, \ldots, X_n\} \) be a sequence of independent and identically distributed random variables with 
+        \( \text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty \), and let
+        \begin{equation}
+            S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+                = \frac{1}{n}\sum_{i}^{n} X_i\
+        \end{equation} 
+        denote their mean. Then as $n$ approaches infinity, the random variables \( \sqrt{n}(S_n - \mu) \) converge in distribution to a normal \( \mathcal{N}(0, \sigma^2) \).
     </p>
-
+    <!-- How to change the margins and paper size -->
+    <p class="SubSection">2.7 &ensp; How to change the margins and paper size</p>
+    <p class="BodyText">
+        Usually the template you're using will have the page margins and paper size set correctly for that use-case. For example, if you're using a journal article template provided 
+        by the journal publisher, that template will be formatted according to their requirements. In these cases, it's best not to alter the margins directly.
+    </p>
+    <p class="BodyText">
+        If however you're using a more general template, such as this one, and would like to alter the margins, a common way to do so is via the geometry package. You can find the geometry 
+        package loaded in the preamble at the top of this example file, and if you'd like to learn more about how to adjust the settings, please visit this help article on 
+        <a href="https://www.overleaf.com/learn/latex/page_size_and_margins" target="_blank">page size and margins</a>
+    </p>
