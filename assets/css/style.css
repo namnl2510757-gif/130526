@@ -133,3 +133,10 @@ hr{
     width: 100%;
 }
 
+/* Footnote */
+
+.Footnote{
+    padding-left: 10%;
+    width: 80%;
+    margin-top: 10px;
+}
