@@ -129,6 +129,7 @@ li {
 /* Chia đoạn */
 
 hr{
+    border: 1px solid black;
     padding-left: 10%;
     width: 80%;
 }
