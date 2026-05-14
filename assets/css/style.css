@@ -45,13 +45,14 @@
 }
 
 .Margins{
-    padding-left: 21%;
-    width: 58%;
+    padding-left: 10%;
+    width: 80%;
 }
 
 .AbstractMargins{
-    padding-left: 6%;
-    width: 88%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
     padding-bottom: 15px;
 }
 
