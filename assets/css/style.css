@@ -141,6 +141,11 @@ hr{
 }
 
 /* footer */
+.Footer{
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
 .align-center{
     text-align: center;
 }
