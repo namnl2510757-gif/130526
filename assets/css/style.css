@@ -87,9 +87,10 @@
 
 /* Link */
 a {
-    color:rgb(50, 78, 192); 
     text-decoration: none;
+    color:rgb(50, 78, 192); 
     font-size: 23px;
+    cursor: pointer;
 }
 
 /* Chèn ảnh */
@@ -118,8 +119,17 @@ li {
 }
 
 /* Mathjax */
+
 .MathJax {
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 100%;
 }
+
+/* Chia đoạn */
+
+hr{
+    padding-left: 10%;
+    width: 80%;
+}
+
